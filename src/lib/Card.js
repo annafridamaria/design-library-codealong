@@ -18,7 +18,7 @@ font-size: 30px;
 const SecondaryText = styled.p`
 margin: 0px;
 font-size: 20px;
-color: #464646
+color: #464646;
 `
 const Thumbnail = styled.div`
     width: 50px;
@@ -37,7 +37,7 @@ const TitleBar = styled.div`
 export const Card = ({title, secondaryText, thumbnailUrl, coverImage }) => {
     return (
         <Container>
-            {coverImage && <CoverImage src={coverImage}/>}
+            {CoverImage && <CoverImage src={coverImage}/>}
             <TitleBar>
                 {thumbnailUrl && <Thumbnail url="thumbnailUrl"/>}
                 <div>
